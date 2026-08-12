@@ -1,0 +1,9 @@
+name: Team A Pipeline
+
+on: [push]
+
+jobs:
+  call-shared-build:
+    uses: ./.github/workflows/reusable-build.yml
+    with:
+      node-version: '20'
